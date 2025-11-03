@@ -1,7 +1,7 @@
 {
   "name": "use-state-sync",
-  "version": "1.0.0",
-  "description": "use-state-sync workspace",
+  "version": "2.0.0",
+  "description": "A React Hook that solves the useState closure problem, allowing you to access the latest state value anywhere",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -9,10 +9,29 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsc && node build.js"
+    "build": "tsc && node build.js",
+    "prepublishOnly": "npm run build"
   },
+  "keywords": [
+    "react",
+    "hooks",
+    "useState",
+    "state-management",
+    "closure",
+    "sync",
+    "typescript"
+  ],
   "author": "johnny chen",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jiayou828/use-state-sync.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/Jiayou828/use-state-sync#readme",
+  "bugs": {
+    "url": "https://github.com/Jiayou828/use-state-sync/issues"
+  },
   "devDependencies": {
     "@types/react": "^18.3.26",
     "terser": "^5.36.0"
