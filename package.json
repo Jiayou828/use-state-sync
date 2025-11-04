@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "pnpm --filter ./apps/* dev",
     "build": "pnpm --filter ./packages/core build",
-    "build:debug": "pnpm --filter ./packages/core build --watch",
+    "build:debug": "pnpm --filter ./packages/core build:watch",
     "preview": "pnpm --filter ./apps/* preview",
     "test": "pnpm --filter ./apps/* test",
     "test:ui": "pnpm --filter ./apps/* test:ui",

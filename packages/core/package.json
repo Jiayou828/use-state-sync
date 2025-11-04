@@ -1,6 +1,6 @@
 {
   "name": "use-state-sync",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "A React Hook that solves the useState closure problem, allowing you to access the latest state value anywhere",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "build": "tsc && node build.js",
-    "prepublishOnly": "npm run build"
+    "build:watch": "node build.js --watch",
+    "prepublishOnly": "npm run build && node prepublish-check.js"
   },
   "keywords": [
     "react",
